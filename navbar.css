@@ -1,0 +1,41 @@
+.Navitems{
+    display:flex;
+    position:fixed;
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#33a769;
+    z-index:999;
+
+}
+.nav-logo{
+    margin-left:10%;
+    font-size: 26px;
+    color:white;
+}
+.menu-icon{
+    display:block;
+    margin-left:5px;
+    width:40px;
+    padding:3px;
+    font-size:34px;
+}
+.navlist{
+    list-style: none;
+    width:140px;
+    gap:10px;
+}
+.navlink{
+    text-decoration: none;
+    color:white;
+    font-size:24px;
+    font-family: 'Ms Madi', cursive;
+    font-family: 'PT Sans', sans-serif;
+    text-align: center;
+    
+}
+.navul{
+    display:flex;
+    margin-left:20%;
+    
+}
