@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { NavItem } from 'react-bootstrap';
 import{Mitem} from "./Menuitem"
 import './navbar.css'
+const  logo=new URL("./images_dir/65a17edcce.jpg",import .meta.url)
 class Navbar extends Component {
     state = { 
         
@@ -17,17 +18,21 @@ class Navbar extends Component {
                  <i class="fa fa-car"></i>
                  </div>
                  <ul className="navul">
-                   <li className="navlist">
-                       <a className="navlink" href="">Home</a>
-                   </li>
-                   <li className="navlist">
-                       <a className="navlink" href="">Contact Us</a>
-                   </li>
-                   <li className="navlist">
-                       <a className="navlink" href="">About us</a>
-                   </li>
+                     {Mitem.map((items,index)=>{
+                         return(
+                          <li className="navlist" key={index}>
+                          <a className={items.cname} href={items.url}>{items.title}</a>
+                      </li>
+                     )})}
+                
+                   
                  </ul>
              </nav>
+             <header>
+                 <div className="logo">
+                     <img src={logo} className="logoimg"/>
+                 </div>
+             </header>
             </>
         );
     }
